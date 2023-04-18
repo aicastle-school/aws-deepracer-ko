@@ -1,17 +1,17 @@
 # About AI Castle
 
 ```{admonition} Contact : edu@ai-castle.com
-- If you are interested in DeepRacer training, please contact AI Castle! 
-- AI Castle has excellent instructors always ready to help.
+- DeepRacer 위탁 교육 및 행사에 관심이 있다면, 언제든 (주)에이아이캐슬에 문의하세요! 
+- (주)에이아이캐슬에는 우수한 인공지능 강사와 운영진들이 당신을 기다리고 있습니다.
 ```
 
-Hello! We are AI Castle Inc., a company specializing in artificial intelligence development and education. Our company takes the lead in providing cutting-edge AI solutions and educational programs for various fields, based on advanced technology and expertise. Our goal is to improve people's quality of life through groundbreaking advancements in technology.
+안녕하세요! 저희는 인공지능 개발 및 교육 전문 기업인 AI Castle Inc.입니다. 저희 회사는 첨단 기술과 전문 지식을 기반으로 다양한 분야에 최첨단 인공지능 솔루션과 교육 프로그램을 제공하는 데 앞장서고 있습니다. 기술의 혁신적인 발전을 통해 사람들의 삶의 질을 향상시키는 것이 목표입니다.
 
-Our team consists of experienced developers and education specialists who work together to develop practical and innovative AI technologies while operating a wide range of educational programs. This enables us to provide valuable services to both individuals and businesses.
+저희 팀은 경험 많은 개발자와 교육 전문가들로 구성되어 있으며, 실용적이고 혁신적인 인공지능 기술을 개발하고 다양한 교육 프로그램을 운영하며 협력합니다. 이를 통해 개인과 기업 모두에게 가치 있는 서비스를 제공할 수 있습니다.
 
-We offer offline and online courses through the internet, developing programs that cater to learners of all levels, from beginners to experts. Our courses expertly blend theory and practice, enabling participants to apply AI technologies in real-world situations.
+저희는 인터넷을 통해 오프라인 및 온라인 교육 과정을 제공하며, 초보자부터 전문가까지 모든 수준의 학습자를 위한 프로그램을 개발합니다. 저희의 교육 과정은 이론과 실습이 뛰어난 조화를 이루어 참가자들이 인공지능 기술을 실제 상황에서 적용할 수 있도록 합니다.
 
-AI Castle Inc. is constantly striving to provide the best AI solutions and education services to clients both domestically and internationally. If you are interested in preparing for the future with us, please feel free to contact us at any time. We invite you to join us in the world of artificial intelligence!
+AI Castle Inc.는 국내외 고객에게 최상의 인공지능 솔루션 및 교육 서비스를 제공하기 위해 끊임없이 노력하고 있습니다. 저희와 함께 미래를 준비하고자 하는 분들은 언제든지 연락 주시기 바랍니다. 인공지능의 세계에서 저희와 함께하실 것을 초대합니다!
 
 Contact
 - info@ai-castle.com

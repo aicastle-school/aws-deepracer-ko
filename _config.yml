@@ -1,0 +1,36 @@
+# 책 설정
+# https://jupyterbook.org/customize/config.html에서 자세히 알아보십시오
+
+title: AWS DeepRacer School (English)
+author: AI Castle (edu@ai-castle.com)
+logo: logo.png
+
+# 각 빌드에서 노트북의 강제 재 실행.
+# https://jupyterbook.org/content/execute.html을 참조하십시오
+execute:
+  execute_notebooks: force
+
+# PDF 빌드의 라텍스 출력 파일의 이름을 정의합니다.
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# 인용을 만들 수 있도록 Bibtex 파일을 추가하십시오.
+bibtex_bibfiles:
+  - references.bib
+
+# 책이 웹에있는 위치에 대한 정보
+# repository:
+#   url: https://github.com/executablebooks/jupyter-book  # 책의 온라인 위치
+#   path_to_book: docs  # 저장소 루트와 관련하여 귀하의 책에 대한 선택적 경로
+#   branch: master  # 링크를 만들 때 어떤 저장소를 사용해야하는지 (선택 사항)
+
+# 책에 github 버튼을 추가하십시오
+# https://jupyterbook.org/customize/config.html#add-a-link-toyour-repository를 참조하십시오
+html:
+  use_issues_button: false
+  use_repository_button: false
+  favicon                   : "favicon.ico"  # A path to a favicon image
+  extra_navbar              : # Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
+
+

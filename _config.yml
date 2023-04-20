@@ -31,6 +31,9 @@ html:
   use_issues_button: false
   use_repository_button: false
   favicon                   : "favicon.ico"  # A path to a favicon image
-  extra_navbar              : # Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
-
+  extra_navbar              : "" # Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
+  comments:
+    hypothesis: true
+    utterances:
+      repo: "ai-castle/aws-deepracer-school-ko"
 

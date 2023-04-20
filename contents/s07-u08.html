@@ -42,6 +42,41 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "ai-castle/aws-deepracer-school-ko");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -769,36 +804,15 @@ title="Print to PDF"
 <h1>If Statement<a class="headerlink" href="#if-statement" title="Permalink to this headline">#</a></h1>
 <p><strong>Section 07. DeepRacer를 위한 파이썬 기초</strong></p>
 <p><strong>Unit 08. If Statement</strong></p>
-<video id="videoPlayer" controls width="800" style="max-width: 100%;" controlsList="nodownload">
-    <source src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/video.mp4" type="video/mp4">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/English.vtt" srclang="en" label="English" default>
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/한국어.vtt" srclang="ko" label="한국어">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/de.vtt" srclang="de" label="Deutsch">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/Español.vtt" srclang="es" label="Español">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/Français.vtt" srclang="fr" label="Français">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/Bahasa Indonesia.vtt" srclang="id" label="Bahasa Indonesia">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/Italiano.vtt" srclang="it" label="Italiano">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/日本語.vtt" srclang="ja" label="日本語">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/Nederlands.vtt" srclang="nl" label="Nederlands">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/Polski.vtt" srclang="pl" label="Polski">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/Português.vtt" srclang="pt" label="Português">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/Русский.vtt" srclang="ru" label="Русский">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/ภาษาไทย.vtt" srclang="th" label="ภาษาไทย">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/Türkçe.vtt" srclang="tr" label="Türkçe">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/Tiếng Việt.vtt" srclang="vi" label="Tiếng Việt">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/简体中文 (中国).vtt" srclang="zh-CN" label="简体中文 (中国)">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/繁體中文 (台灣).vtt" srclang="zh-TW" label="繁體中文 (台灣)">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/繁體中文 (香港).vtt" srclang="zh-HK" label="繁體中文 (香港)">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/हिन्दी.vtt" srclang="hi" label="हिन्दी">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s07/u08/vtt/العربية.vtt" srclang="ar" label="العربية">
-</video><div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+<hr class="docutils" />
+<p><strong>PPT</strong></p>
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
  border-radius: 8px; will-change: transform;">
   <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFfaB7jLh4&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFfZzq6FHI&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
   </iframe>
-</div>
-AI CASTLE 님의 <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFfaB7jLh4&#x2F;view?utm_content=DAFfaB7jLh4&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">u08_en_If_Statement</a></section>
+</div></section>
 
     <script type="text/x-thebe-config">
     {

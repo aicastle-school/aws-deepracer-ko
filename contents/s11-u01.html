@@ -42,6 +42,41 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "ai-castle/aws-deepracer-school-ko");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -769,29 +804,9 @@ title="Print to PDF"
 <h1>Tips<a class="headerlink" href="#tips" title="Permalink to this headline">#</a></h1>
 <p><strong>Section 11. Tips</strong></p>
 <p><strong>Unit 01. 섹션 소개</strong></p>
-<video id="videoPlayer" controls width="800" style="max-width: 100%;" controlsList="nodownload">
-    <source src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/video.mp4" type="video/mp4">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/English.vtt" srclang="en" label="English" default>
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/한국어.vtt" srclang="ko" label="한국어">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/de.vtt" srclang="de" label="Deutsch">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/Español.vtt" srclang="es" label="Español">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/Français.vtt" srclang="fr" label="Français">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/Bahasa Indonesia.vtt" srclang="id" label="Bahasa Indonesia">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/Italiano.vtt" srclang="it" label="Italiano">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/日本語.vtt" srclang="ja" label="日本語">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/Nederlands.vtt" srclang="nl" label="Nederlands">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/Polski.vtt" srclang="pl" label="Polski">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/Português.vtt" srclang="pt" label="Português">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/Русский.vtt" srclang="ru" label="Русский">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/ภาษาไทย.vtt" srclang="th" label="ภาษาไทย">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/Türkçe.vtt" srclang="tr" label="Türkçe">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/Tiếng Việt.vtt" srclang="vi" label="Tiếng Việt">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/简体中文 (中国).vtt" srclang="zh-CN" label="简体中文 (中国)">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/繁體中文 (台灣).vtt" srclang="zh-TW" label="繁體中文 (台灣)">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/繁體中文 (香港).vtt" srclang="zh-HK" label="繁體中文 (香港)">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/हिन्दी.vtt" srclang="hi" label="हिन्दी">
-    <track kind="captions" src="https://aws-deepracer-school.s3.amazonaws.com/data/en/s11/u01/vtt/العربية.vtt" srclang="ar" label="العربية">
-</video><div class="toctree-wrapper compound">
+<hr class="docutils" />
+<p><strong>PPT</strong></p>
+<div class="toctree-wrapper compound">
 </div>
 </section>
 

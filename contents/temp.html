@@ -841,11 +841,11 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># for file in files :</span>
-<span class="c1">#     with open(file, &#39;r&#39;) as f :</span>
-<span class="c1">#         text = f.read()</span>
-<span class="c1">#     with open(file, &#39;w&#39;) as f :</span>
-<span class="c1">#         f.write(text.replace(&#39;label=\\&quot;English\\&quot;&gt;&#39;, &#39;label=\\&quot;English\\&quot; default&gt;&#39;))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span> <span class="p">:</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span> <span class="p">:</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span> <span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;&lt;h3&gt;PPT&lt;/h3&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;h3&gt;PPT&lt;/h3&gt;&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>

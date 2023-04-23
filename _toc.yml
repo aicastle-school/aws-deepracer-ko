@@ -3,14 +3,17 @@
 
 format: jb-book
 root: intro
+
 parts:
+  - chapters: 
+    - file: proposal
   - chapters:
     - file: premium/01
       sections:
       - file: premium/02
       - file: premium/03
       - file: premium/04
-      - file: premium/05
+      
       
   # ###################
   - caption: Contents

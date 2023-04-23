@@ -134,7 +134,7 @@ parts:
   - caption: Resources
     chapters:
     - url: https://ai-castle.github.io/aws-deepracer-school-en/index.html
-      title: AWS DeepRacer School (English)
+      title: English
     - url: https://ai-castle.com
       title: AI Castle
 

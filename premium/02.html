@@ -149,14 +149,17 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Join the Course
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../proposal.html">
    위탁 교육 &amp; 행사 대행 🌟
   </a>
  </li>
-</ul>
-<ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="01.html">
    프리미엄 과정 🚀
@@ -183,6 +186,11 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://inf.run/VwnT">
+   인프런에서 강의 수강
+  </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -889,14 +897,8 @@ title="Print to PDF"
 <section id="id2">
 <h2>요금 할인<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>기간에 따른 추가 할인 : 세달 이상 시 25% 할인</p></li>
-<li><p>멤버 수에 따른 추가 할인</p>
-<ul>
-<li><p>50명 이상 : 10% 추가 할인</p></li>
-<li><p>100명 이상 : 20% 추가 할인</p></li>
-<li><p>200명 이상 : 30% 추가 할인</p></li>
-</ul>
-</li>
+<li><p>기간 할인 : 3달 이상 시 25% 추가 할인</p></li>
+<li><p>멤버 수 할인 : 100명 이상시 10%, 200명 이상시 20% 추가 할인</p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -921,9 +923,6 @@ title="Print to PDF"
         var discountRate = 0;
         if (numMonths >= 3) {
             discountRate += 0.25;
-        }
-        if (numStudents >= 50) {
-            discountRate += 0.1;
         }
         if (numStudents >= 100) {
             discountRate += 0.1;

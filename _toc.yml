@@ -102,6 +102,8 @@ parts:
       sections:
       - file: contents/s08-u02
       - file: contents/s08-u03
+        sections:
+        - file: contents/s08-u03-0
       - file: contents/s08-u04
       - file: contents/s08-u05
       - file: contents/s08-u06
@@ -133,6 +135,14 @@ parts:
       - file: contents/s11-u05
       - file: contents/s11-u06
       - file: contents/s11-u07
+        sections:
+        - file: contents/s11-u07-0
+        - file: contents/s11-u07-1
+        - file: contents/s11-u07-2
+        - file: contents/s11-u07-3
+        - file: contents/s11-u07-4
+        - file: contents/s11-u07-5
+        - file: contents/s11-u07-6
       - file: contents/s11-u08
 
   - caption: Resources

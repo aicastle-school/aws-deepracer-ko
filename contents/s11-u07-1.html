@@ -1077,6 +1077,13 @@ git<span class="w"> </span>clone<span class="w"> </span>https://github.com/aws-d
 <section id="docker">
 <h3>(6) 전체 리포지토리 설정 및 핵심 Docker 이미지 다운로드<a class="headerlink" href="#docker" title="Permalink to this headline">#</a></h3>
 <ul>
+<li><p>루트 사용자 전환</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>su
+</pre></div>
+</div>
+</li>
+<li><p>설정 및 다운로드</p>
+<ul>
 <li><p>인스턴스 옵션 1 : cpu (c5)</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/deepracer-for-cloud
 ./bin/init.sh<span class="w"> </span>-c<span class="w"> </span>aws<span class="w"> </span>-a<span class="w"> </span>cpu
@@ -1088,6 +1095,8 @@ git<span class="w"> </span>clone<span class="w"> </span>https://github.com/aws-d
 ./bin/init.sh<span class="w"> </span>-c<span class="w"> </span>aws<span class="w"> </span>-a<span class="w"> </span>gpu
 </pre></div>
 </div>
+</li>
+</ul>
 </li>
 </ul>
 </section>

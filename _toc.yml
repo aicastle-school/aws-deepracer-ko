@@ -16,7 +16,7 @@ parts:
       - file: premium/04
       - file: premium/05
       
-    - url: https://inf.run/VwnT
+    - url: https://inf.run/aXoi
       title: 인프런에서 강의 수강
       
   # ###################

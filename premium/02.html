@@ -193,7 +193,7 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference external" href="https://inf.run/VwnT">
+  <a class="reference external" href="https://inf.run/aXoi">
    인프런에서 강의 수강
   </a>
  </li>
@@ -945,20 +945,21 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>프리미엄 과정 요금<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
-<h1> <b> ₩ 28,000</b> </h1>
+<h1> <b> ₩ 63,000</b> </h1>
 <ul class="simple">
-<li><p><strong>매월 멤버 1인 ₩ 28,000</strong></p></li>
+<li><p><strong>멤버 1인당, 3개월 수강 기준</strong></p></li>
 <li><p>PPT 무제한 보기</p></li>
 <li><p>모든 동영상 강의 무제한 스트리밍</p></li>
 <li><p>비디오의 총 분량은 약 6시간</p></li>
 <li><p>Q&amp;A : 동영상에 댓글달기를 통해 질문하고 답변 받기 가능.</p></li>
+<li><p>최소 수강 기간 : 3개월</p></li>
+<li><p>부가세 별도</p></li>
 </ul>
 <hr class="docutils" />
 <section id="id2">
 <h2>요금 할인<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>기간 할인 : 3달 이상 시 25% 추가 할인</p></li>
-<li><p>멤버 수 할인 : 100명 이상시 10%, 200명 이상시 20% 추가 할인</p></li>
+<li><p>멤버 수 할인 : 50명 이상시 10%, 100명 이상시 20% 추가 할인</p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -966,13 +967,13 @@ title="Print to PDF"
 <h2>요금 계산기<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
 <div class="form-group">
     <label for="numStudents">멤버 수:</label>
-    <input type="number" id="numStudents" name="numStudents" oninput="calculatePrice()" value="1">
+    <input type="number" id="numStudents" name="numStudents" oninput="calculatePrice()" value="1" min="1">
 </div>
 <div class="form-group">
     <label for="numMonths">기간 (월):</label>
-    <input type="number" id="numMonths" name="numMonths" oninput="calculatePrice()" value="1">
+    <input type="number" id="numMonths" name="numMonths" oninput="calculatePrice()" value="3" min="3">
 </div>
-<b> <p id="result">전체 요금: ₩ 28000 (할인율: 0%)</p></b>
+<b> <p id="result">전체 요금: ₩ 63000 (할인율: 0%)</p></b>
 <p> 부가세는 제외 된 금액입니다. </p>
 <script>
     function calculatePrice() {
@@ -981,17 +982,14 @@ title="Print to PDF"
         var numMonths = parseInt(document.getElementById("numMonths").value);
         // 할인 계산
         var discountRate = 0;
-        if (numMonths >= 3) {
-            discountRate += 0.25;
+        if (numStudents >= 50) {
+            discountRate += 0.1;
         }
         if (numStudents >= 100) {
             discountRate += 0.1;
         }
-        if (numStudents >= 200) {
-            discountRate += 0.1;
-        }
         // 요금 계산
-        var basePrice = numStudents * 28000 * numMonths;
+        var basePrice = numStudents * 21000 * numMonths;
         var discountAmount = basePrice * discountRate;
         var totalPrice = basePrice - discountAmount;
         // 결과 출력

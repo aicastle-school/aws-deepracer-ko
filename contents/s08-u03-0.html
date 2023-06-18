@@ -1017,9 +1017,8 @@ title="Print to PDF"
 <h1>기타 셈플<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
 <section id="direction-1">
 <h2>direction-1<a class="headerlink" href="#direction-1" title="Permalink to this headline">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+<span class="kn">import</span> <span class="nn">math</span>
 
 <span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
     <span class="n">waypoints</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;waypoints&#39;</span><span class="p">]</span>
@@ -1042,14 +1041,10 @@ title="Print to PDF"
     <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
 </section>
 <section id="direction-2">
 <h2>direction-2 (더 멀리보기)<a class="headerlink" href="#direction-2" title="Permalink to this headline">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="n">next_interval</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
@@ -1075,14 +1070,10 @@ title="Print to PDF"
     <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
 </section>
 <section id="speed-1">
 <h2>Speed - 1<a class="headerlink" href="#speed-1" title="Permalink to this headline">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
     <span class="n">waypoints</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;waypoints&#39;</span><span class="p">]</span>
@@ -1107,14 +1098,10 @@ title="Print to PDF"
     <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
 </section>
 <section id="speed-2">
 <h2>Speed -2<a class="headerlink" href="#speed-2" title="Permalink to this headline">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="n">next_interval</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
@@ -1144,17 +1131,13 @@ title="Print to PDF"
     <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
 </section>
 <section id="progress-1">
 <h2>Progress - 1<a class="headerlink" href="#progress-1" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>참고: steps 값이 2부터 시작 됨</p></li>
 </ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
     <span class="n">track_length</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;track_length&#39;</span><span class="p">]</span>
     <span class="n">steps</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;steps&#39;</span><span class="p">]</span>
     <span class="n">progress</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;progress&#39;</span><span class="p">]</span>
@@ -1172,46 +1155,35 @@ title="Print to PDF"
     <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
 </section>
 <section id="progress-2">
 <h2>Progress - 2 (최단거리)<a class="headerlink" href="#progress-2" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>참고: steps 값이 2부터 시작 됨</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
-    <span class="n">track_length</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;track_length&#39;</span><span class="p">]</span>
-    <span class="n">steps</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;steps&#39;</span><span class="p">]</span>
-    <span class="n">progress</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;progress&#39;</span><span class="p">]</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span>
+<!-- - 참고: steps 값이 2부터 시작 됨
+```python
+def reward_function(params):
+    track_length = params['track_length']
+    steps = params['steps']
+    progress = params['progress']
+    x = params['x']
+    y = params['y']
 
-    <span class="k">global</span> <span class="n">progress_prev</span><span class="p">,</span> <span class="n">x_prev</span><span class="p">,</span> <span class="n">y_prev</span>
-    <span class="k">if</span> <span class="n">steps</span> <span class="o">&lt;=</span> <span class="mi">2</span> <span class="p">:</span> 
-        <span class="n">progress_prev</span><span class="p">,</span> <span class="n">x_prev</span><span class="p">,</span> <span class="n">y_prev</span> <span class="o">=</span> <span class="n">progress</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span>
+    global progress_prev, x_prev, y_prev
+    if steps <= 2 : 
+        progress_prev, x_prev, y_prev = progress, x, y
     
-    <span class="n">delta_progress</span> <span class="o">=</span> <span class="n">progress</span> <span class="o">-</span> <span class="n">progress_prev</span>
-    <span class="n">delta_projection</span> <span class="o">=</span> <span class="n">track_length</span> <span class="o">*</span> <span class="p">(</span><span class="n">delta_progress</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">delta_projection</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">delta_projection</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">delta_position</span> <span class="o">=</span> <span class="p">((</span><span class="n">x</span> <span class="o">-</span> <span class="n">x_prev</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">y</span> <span class="o">-</span> <span class="n">y_prev</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+    delta_progress = progress - progress_prev
+    delta_projection = track_length * (delta_progress/100)
+    delta_projection = max(min(delta_projection,1),-1)
+    delta_position = ((x - x_prev)**2 + (y - y_prev)**2)**(1/2)
     
-    <span class="n">reward</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">delta_projection</span> <span class="o">-</span> <span class="n">delta_position</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span>
+    reward = (2*delta_projection - delta_position)**3
 
-    <span class="n">progress_prev</span><span class="p">,</span> <span class="n">x_prev</span><span class="p">,</span> <span class="n">y_prev</span> <span class="o">=</span> <span class="n">progress</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span>
-    <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
+    progress_prev, x_prev, y_prev = progress, x, y
+    return float(reward)
+``` --></section>
 <section id="confusion-1">
 <h2>confusion - 1<a class="headerlink" href="#confusion-1" title="Permalink to this headline">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>  
     
@@ -1248,14 +1220,10 @@ title="Print to PDF"
     <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
 </section>
 <section id="confusion-2">
 <h2>Confusion -2<a class="headerlink" href="#confusion-2" title="Permalink to this headline">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="k">def</span> <span class="nf">distance_from_line</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">abs</span><span class="p">((</span><span class="n">y2</span><span class="o">-</span><span class="n">y1</span><span class="p">)</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span> <span class="p">(</span><span class="n">x2</span><span class="o">-</span><span class="n">x1</span><span class="p">)</span><span class="o">*</span><span class="n">y</span> <span class="o">+</span> <span class="p">(</span><span class="n">x2</span><span class="o">*</span><span class="n">y1</span> <span class="o">-</span> <span class="n">x1</span><span class="o">*</span><span class="n">y2</span><span class="p">))</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">y2</span><span class="o">-</span><span class="n">y1</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">x2</span><span class="o">-</span><span class="n">x1</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
@@ -1301,22 +1269,10 @@ title="Print to PDF"
     <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span> <span class="n">line</span> <span class="mi">7</span>
-    <span class="n">waypoints2</span> <span class="o">=</span> <span class="c1"># Capston</span>
-                 <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 <section id="similar-to-supervised-learning-1">
 <h2>similar to supervised learning - 1<a class="headerlink" href="#similar-to-supervised-learning-1" title="Permalink to this headline">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="n">next_interval</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
@@ -1350,8 +1306,6 @@ title="Print to PDF"
 
     <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
 </div>
 <!-- ```json
 {

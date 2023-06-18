@@ -147,7 +147,7 @@ parts:
 
   - caption: Resources
     chapters:
-    - url: https://ai-castle.github.io/aws-deepracer-school-en/index.html
+    - url: https://deepracer-school-en.ai-castle.com
       title: English
     - url: https://ai-castle.com
       title: AI Castle

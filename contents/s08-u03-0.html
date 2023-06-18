@@ -895,18 +895,48 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sample-1">
-   Sample 1
+  <a class="reference internal nav-link" href="#direction-1">
+   direction-1
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sample-2">
-   Sample 2
+  <a class="reference internal nav-link" href="#direction-2">
+   direction-2 (더 멀리보기)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sample-3">
-   Sample 3
+  <a class="reference internal nav-link" href="#speed-1">
+   Speed - 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#speed-2">
+   Speed -2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#progress-1">
+   Progress - 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#progress-2">
+   Progress - 2 (최단거리)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#confusion-1">
+   confusion - 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#confusion-2">
+   Confusion -2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#similar-to-supervised-learning-1">
+   similar to supervised learning - 1
   </a>
  </li>
 </ul>
@@ -929,18 +959,48 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sample-1">
-   Sample 1
+  <a class="reference internal nav-link" href="#direction-1">
+   direction-1
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sample-2">
-   Sample 2
+  <a class="reference internal nav-link" href="#direction-2">
+   direction-2 (더 멀리보기)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sample-3">
-   Sample 3
+  <a class="reference internal nav-link" href="#speed-1">
+   Speed - 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#speed-2">
+   Speed -2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#progress-1">
+   Progress - 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#progress-2">
+   Progress - 2 (최단거리)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#confusion-1">
+   confusion - 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#confusion-2">
+   Confusion -2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#similar-to-supervised-learning-1">
+   similar to supervised learning - 1
   </a>
  </li>
 </ul>
@@ -955,9 +1015,203 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>기타 셈플<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
-<section id="sample-1">
-<h2>Sample 1<a class="headerlink" href="#sample-1" title="Permalink to this headline">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<section id="direction-1">
+<h2>direction-1<a class="headerlink" href="#direction-1" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
+    <span class="n">waypoints</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;waypoints&#39;</span><span class="p">]</span>
+    <span class="n">closest_waypoints</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;closest_waypoints&#39;</span><span class="p">]</span>
+    <span class="n">heading</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;heading&#39;</span><span class="p">]</span>
+    
+    <span class="c1"># 현재 에이전트와 가장 가까운 waypoint의 위치를 가져옵니다.</span>
+    <span class="n">prev_point</span> <span class="o">=</span> <span class="n">waypoints</span><span class="p">[</span><span class="n">closest_waypoints</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+    <span class="n">next_point</span> <span class="o">=</span> <span class="n">waypoints</span><span class="p">[</span><span class="n">closest_waypoints</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+
+    <span class="c1"># track_direction 을 계산 </span>
+    <span class="n">track_direction</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">atan2</span><span class="p">(</span><span class="n">next_point</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">prev_point</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">next_point</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">prev_point</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="c1"># 각의 차이 (direction_diff) 계산</span>
+    <span class="n">direction_diff</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">track_direction</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">heading</span><span class="p">))</span>
+    
+    <span class="c1"># 보상 결정</span>
+    <span class="n">reward</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">direction_diff</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="direction-2">
+<h2>direction-2 (더 멀리보기)<a class="headerlink" href="#direction-2" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">next_interval</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
+    <span class="n">waypoints</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;waypoints&#39;</span><span class="p">]</span>
+    <span class="n">closest_waypoints</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;closest_waypoints&#39;</span><span class="p">]</span>
+    <span class="n">heading</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;heading&#39;</span><span class="p">]</span>
+    
+    <span class="n">waypoints_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">waypoints</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+    
+    <span class="c1"># 현재 에이전트와 가장 가까운 waypoint의 위치를 가져옵니다.</span>
+    <span class="n">prev_point</span> <span class="o">=</span> <span class="n">waypoints</span><span class="p">[</span><span class="n">closest_waypoints</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+    <span class="n">next_point</span> <span class="o">=</span> <span class="n">waypoints</span><span class="p">[(</span><span class="n">closest_waypoints</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">next_interval</span><span class="p">)</span> <span class="o">%</span> <span class="n">waypoints_count</span><span class="p">]</span>
+
+    <span class="c1"># track_direction 을 계산 </span>
+    <span class="n">track_direction</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">atan2</span><span class="p">(</span><span class="n">next_point</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">prev_point</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">next_point</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">prev_point</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="c1"># 각의 차이 (direction_diff) 계산</span>
+    <span class="n">direction_diff</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">track_direction</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">heading</span><span class="p">))</span>
+    
+    <span class="c1"># 보상 결정</span>
+    <span class="n">reward</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">direction_diff</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="speed-1">
+<h2>Speed - 1<a class="headerlink" href="#speed-1" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
+    <span class="n">waypoints</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;waypoints&#39;</span><span class="p">]</span>
+    <span class="n">closest_waypoints</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;closest_waypoints&#39;</span><span class="p">]</span>
+    <span class="n">heading</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;heading&#39;</span><span class="p">]</span>
+    <span class="n">speed</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;speed&#39;</span><span class="p">]</span>
+    
+    <span class="c1"># 현재 에이전트와 가장 가까운 waypoint의 위치를 가져옵니다.</span>
+    <span class="n">prev_point</span> <span class="o">=</span> <span class="n">waypoints</span><span class="p">[</span><span class="n">closest_waypoints</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+    <span class="n">next_point</span> <span class="o">=</span> <span class="n">waypoints</span><span class="p">[</span><span class="n">closest_waypoints</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+
+    <span class="n">track_direction_vector</span> <span class="o">=</span> <span class="p">[</span><span class="n">next_point</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">prev_point</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">next_point</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">prev_point</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+    
+    <span class="n">heading_rad</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">heading</span><span class="p">)</span>
+    <span class="n">car_speed_vector</span> <span class="o">=</span> <span class="p">[</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">heading_rad</span><span class="p">)</span> <span class="o">*</span> <span class="n">speed</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">heading_rad</span><span class="p">)</span> <span class="o">*</span> <span class="n">speed</span><span class="p">]</span>
+
+    <span class="n">inner_product</span> <span class="o">=</span> <span class="n">track_direction_vector</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">car_speed_vector</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">track_direction_vector</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">car_speed_vector</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> 
+    
+    <span class="c1"># 보상 결정</span>
+    <span class="n">reward</span> <span class="o">=</span> <span class="n">inner_product</span>
+    
+    <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="speed-2">
+<h2>Speed -2<a class="headerlink" href="#speed-2" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">next_interval</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
+    <span class="n">waypoints</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;waypoints&#39;</span><span class="p">]</span>
+    <span class="n">closest_waypoints</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;closest_waypoints&#39;</span><span class="p">]</span>
+    <span class="n">heading</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;heading&#39;</span><span class="p">]</span>
+    <span class="n">speed</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;speed&#39;</span><span class="p">]</span>
+    <span class="n">steering_angle</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;steering_angle&#39;</span><span class="p">]</span>
+    
+    <span class="n">waypoints_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">waypoints</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+
+    <span class="c1"># 현재 에이전트와 가장 가까운 waypoint의 위치를 가져옵니다.</span>
+    <span class="n">prev_point</span> <span class="o">=</span> <span class="n">waypoints</span><span class="p">[</span><span class="n">closest_waypoints</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+    <span class="n">next_point</span> <span class="o">=</span> <span class="n">waypoints</span><span class="p">[(</span><span class="n">closest_waypoints</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">next_interval</span><span class="p">)</span> <span class="o">%</span> <span class="n">waypoints_count</span><span class="p">]</span>
+
+    <span class="n">track_direction_vector</span> <span class="o">=</span> <span class="p">[</span><span class="n">next_point</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">prev_point</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">next_point</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">prev_point</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+    
+    <span class="n">heading_rad</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">heading</span><span class="p">)</span>
+    <span class="n">steering_rad</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">steering_angle</span><span class="p">)</span>
+    <span class="n">car_speed_vector</span> <span class="o">=</span> <span class="p">[</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">heading_rad</span> <span class="o">+</span> <span class="n">steering_rad</span><span class="p">)</span> <span class="o">*</span> <span class="n">speed</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">heading_rad</span> <span class="o">+</span> <span class="n">steering_rad</span><span class="p">)</span> <span class="o">*</span> <span class="n">speed</span><span class="p">]</span>
+
+    <span class="n">inner_product</span> <span class="o">=</span> <span class="n">track_direction_vector</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">car_speed_vector</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">track_direction_vector</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">car_speed_vector</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> 
+    
+    <span class="c1"># 보상 결정</span>
+    <span class="n">reward</span> <span class="o">=</span> <span class="n">inner_product</span> <span class="o">**</span> <span class="mi">3</span>
+    
+    <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="progress-1">
+<h2>Progress - 1<a class="headerlink" href="#progress-1" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>참고: steps 값이 2부터 시작 됨</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
+    <span class="n">track_length</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;track_length&#39;</span><span class="p">]</span>
+    <span class="n">steps</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;steps&#39;</span><span class="p">]</span>
+    <span class="n">progress</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;progress&#39;</span><span class="p">]</span>
+
+    <span class="k">global</span> <span class="n">progress_prev</span>
+    <span class="k">if</span> <span class="n">steps</span> <span class="o">&lt;=</span> <span class="mi">2</span> <span class="p">:</span> 
+        <span class="n">progress_prev</span> <span class="o">=</span> <span class="n">progress</span>
+    
+    <span class="n">delta_progress</span> <span class="o">=</span> <span class="n">progress</span> <span class="o">-</span> <span class="n">progress_prev</span>
+    <span class="n">delta_projection</span> <span class="o">=</span> <span class="n">track_length</span> <span class="o">*</span> <span class="p">(</span><span class="n">delta_progress</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">delta_projection</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">delta_projection</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    
+    <span class="n">reward</span> <span class="o">=</span> <span class="n">delta_projection</span> <span class="o">**</span> <span class="mi">3</span>
+    <span class="n">progress_prev</span> <span class="o">=</span> <span class="n">progress</span>
+    <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="progress-2">
+<h2>Progress - 2 (최단거리)<a class="headerlink" href="#progress-2" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>참고: steps 값이 2부터 시작 됨</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
+    <span class="n">track_length</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;track_length&#39;</span><span class="p">]</span>
+    <span class="n">steps</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;steps&#39;</span><span class="p">]</span>
+    <span class="n">progress</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;progress&#39;</span><span class="p">]</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span>
+
+    <span class="k">global</span> <span class="n">progress_prev</span><span class="p">,</span> <span class="n">x_prev</span><span class="p">,</span> <span class="n">y_prev</span>
+    <span class="k">if</span> <span class="n">steps</span> <span class="o">&lt;=</span> <span class="mi">2</span> <span class="p">:</span> 
+        <span class="n">progress_prev</span><span class="p">,</span> <span class="n">x_prev</span><span class="p">,</span> <span class="n">y_prev</span> <span class="o">=</span> <span class="n">progress</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span>
+    
+    <span class="n">delta_progress</span> <span class="o">=</span> <span class="n">progress</span> <span class="o">-</span> <span class="n">progress_prev</span>
+    <span class="n">delta_projection</span> <span class="o">=</span> <span class="n">track_length</span> <span class="o">*</span> <span class="p">(</span><span class="n">delta_progress</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">delta_projection</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">delta_projection</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">delta_position</span> <span class="o">=</span> <span class="p">((</span><span class="n">x</span> <span class="o">-</span> <span class="n">x_prev</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">y</span> <span class="o">-</span> <span class="n">y_prev</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+    
+    <span class="n">reward</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">delta_projection</span> <span class="o">-</span> <span class="n">delta_position</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span>
+
+    <span class="n">progress_prev</span><span class="p">,</span> <span class="n">x_prev</span><span class="p">,</span> <span class="n">y_prev</span> <span class="o">=</span> <span class="n">progress</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span>
+    <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="confusion-1">
+<h2>confusion - 1<a class="headerlink" href="#confusion-1" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>  
     
@@ -970,7 +1224,7 @@ title="Print to PDF"
     
     <span class="c1">############## [reward_speed] speed #############</span>
     <span class="n">speed</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;speed&#39;</span><span class="p">]</span>
-    <span class="n">reward_speed</span> <span class="o">=</span> <span class="n">speed</span> <span class="o">/</span> <span class="mi">4</span> 
+    <span class="n">reward_speed</span> <span class="o">=</span> <span class="n">speed</span> <span class="o">/</span> <span class="mi">2</span>
     
     <span class="c1">############## [reward_direction] direction_diff #############</span>
     <span class="n">waypoints</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;waypoints&#39;</span><span class="p">]</span>
@@ -983,84 +1237,88 @@ title="Print to PDF"
 
     <span class="c1"># track_direction 을 계산 </span>
     <span class="n">track_direction</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">atan2</span><span class="p">(</span><span class="n">next_point</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">prev_point</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">next_point</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">prev_point</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-    <span class="n">track_direction</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">track_direction</span><span class="p">)</span>  
-
-	<span class="c1"># 각의 차이 (direction_diff) 계산</span>
-    <span class="n">direction_diff</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">track_direction</span> <span class="o">-</span> <span class="n">heading</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">direction_diff</span> <span class="o">&gt;</span> <span class="mi">180</span><span class="p">:</span>
-        <span class="n">direction_diff</span> <span class="o">=</span> <span class="mi">360</span> <span class="o">-</span> <span class="n">direction_diff</span>
     
     <span class="c1"># 보상 결정</span>
-    <span class="n">direction_diff_rad</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">direction_diff</span><span class="p">)</span>
-    <span class="n">reward_direction</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">direction_diff_rad</span><span class="p">)</span>
+    <span class="n">direction_diff</span> <span class="o">=</span> <span class="n">track_direction</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">heading</span><span class="p">)</span>
+    <span class="n">reward_direction</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">direction_diff</span><span class="p">)</span>
         
     <span class="c1">########### [reward weight sum] ############ </span>
-    <span class="n">reward</span> <span class="o">=</span> <span class="mi">1</span><span class="o">*</span><span class="n">reward_wheels</span> <span class="o">+</span> <span class="mi">1</span><span class="o">*</span><span class="n">reward_speed</span> <span class="o">+</span> <span class="mi">1</span><span class="o">*</span><span class="n">reward_direction</span>
+    <span class="n">reward</span> <span class="o">=</span> <span class="mi">1</span><span class="o">*</span><span class="n">reward_wheels</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">reward_speed</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">reward_direction</span>
     
     <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
-<section id="sample-2">
-<h2>Sample 2<a class="headerlink" href="#sample-2" title="Permalink to this headline">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<section id="confusion-2">
+<h2>Confusion -2<a class="headerlink" href="#confusion-2" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="k">def</span> <span class="nf">distance_from_line</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">abs</span><span class="p">((</span><span class="n">y2</span><span class="o">-</span><span class="n">y1</span><span class="p">)</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span> <span class="p">(</span><span class="n">x2</span><span class="o">-</span><span class="n">x1</span><span class="p">)</span><span class="o">*</span><span class="n">y</span> <span class="o">+</span> <span class="p">(</span><span class="n">x2</span><span class="o">*</span><span class="n">y1</span> <span class="o">-</span> <span class="n">x1</span><span class="o">*</span><span class="n">y2</span><span class="p">))</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">y2</span><span class="o">-</span><span class="n">y1</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">x2</span><span class="o">-</span><span class="n">x1</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
-    <span class="n">all_wheels_on_track</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;all_wheels_on_track&#39;</span><span class="p">]</span>
-    <span class="n">distance_from_center</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;distance_from_center&#39;</span><span class="p">]</span>
-    <span class="n">track_width</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;track_width&#39;</span><span class="p">]</span>    
-    <span class="n">marker</span> <span class="o">=</span> <span class="mf">0.25</span> <span class="o">*</span> <span class="n">track_width</span>
-    <span class="k">if</span> <span class="n">all_wheels_on_track</span> <span class="p">:</span>
-        <span class="k">if</span> <span class="n">distance_from_center</span> <span class="o">&lt;=</span> <span class="n">marker</span><span class="p">:</span>
-            <span class="n">reward_1</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="k">else</span> <span class="p">:</span>
-            <span class="n">reward_1</span> <span class="o">=</span> <span class="mf">0.5</span>
-    <span class="k">else</span> <span class="p">:</span>
-        <span class="n">reward_1</span> <span class="o">=</span> <span class="mf">0.1</span>
-
-    <span class="c1">############## [reward_direction] direction_diff #############</span>
+    <span class="n">waypoints2</span> <span class="o">=</span> <span class="c1"># Capston</span>
     <span class="n">waypoints</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;waypoints&#39;</span><span class="p">]</span>
+    <span class="n">waypoints_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">waypoints</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
     <span class="n">closest_waypoints</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;closest_waypoints&#39;</span><span class="p">]</span>
+    <span class="n">closest_previous</span><span class="p">,</span> <span class="n">closest_next</span> <span class="o">=</span> <span class="n">closest_waypoints</span>
     <span class="n">heading</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;heading&#39;</span><span class="p">]</span>
+    <span class="n">heading_rad</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">heading</span><span class="p">)</span>
+
+    <span class="n">x_target_prev</span><span class="p">,</span> <span class="n">y_target_prev</span><span class="p">,</span> <span class="n">speed_target_prev</span><span class="p">,</span> <span class="n">steering_target_prev</span> <span class="o">=</span> <span class="n">waypoints2</span><span class="p">[</span><span class="n">closest_previous</span><span class="p">]</span>
+    <span class="n">x_target_front</span><span class="p">,</span> <span class="n">y_target_front</span><span class="p">,</span> <span class="n">speed_target_front</span><span class="p">,</span> <span class="n">steering_target_front</span> <span class="o">=</span> <span class="n">waypoints2</span><span class="p">[</span><span class="n">closest_next</span><span class="p">]</span>
+    <span class="n">speed_target_mean</span> <span class="o">=</span> <span class="p">(</span><span class="n">speed_target_prev</span> <span class="o">+</span> <span class="n">speed_target_front</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+    <span class="n">steering_target_mean</span> <span class="o">=</span> <span class="p">(</span><span class="n">steering_target_prev</span> <span class="o">+</span> <span class="n">steering_target_front</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+    <span class="n">steering_target_mean_rad</span>  <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">steering_target_mean</span><span class="p">)</span>
+    <span class="n">target_heading</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">atan2</span><span class="p">(</span><span class="n">y_target_front</span> <span class="o">-</span> <span class="n">y_target_prev</span><span class="p">,</span> <span class="n">x_target_front</span> <span class="o">-</span> <span class="n">x_target_prev</span><span class="p">)</span>
+    <span class="n">target_heading_rad</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">target_heading</span><span class="p">)</span>
+
     <span class="n">x</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span>
+
+    <span class="n">track_length</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;track_length&#39;</span><span class="p">]</span>
+    <span class="n">track_length_half</span> <span class="o">=</span> <span class="n">track_length</span> <span class="o">/</span> <span class="mi">2</span>
+
+    <span class="n">speed</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;speed&#39;</span><span class="p">]</span>
+    <span class="n">steering_angle</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;steering_angle&#39;</span><span class="p">]</span>
+    <span class="n">steering_rad</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">steering_angle</span><span class="p">)</span>
+
+    <span class="n">distance_from_wp2_line</span> <span class="o">=</span> <span class="n">distance_from_line</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x_target_prev</span><span class="p">,</span> <span class="n">y_target_prev</span><span class="p">,</span> <span class="n">x_target_front</span><span class="p">,</span> <span class="n">y_target_front</span><span class="p">)</span>
+    <span class="n">reward_position</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="p">(</span><span class="n">distance_from_wp2_line</span> <span class="o">/</span> <span class="n">track_length_half</span><span class="p">))</span>
     
-    <span class="n">waypoints_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">waypoints</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
-    <span class="n">repeat_count</span> <span class="o">=</span> <span class="mi">7</span>
-    
-    <span class="n">reward_2</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="c1"># 현재 에이전트와 가장 가까운 waypoint의 위치를 가져옵니다.</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">repeat_count</span><span class="p">)</span> <span class="p">:</span>
-        <span class="n">next_point</span> <span class="o">=</span> <span class="n">waypoints</span><span class="p">[(</span><span class="n">closest_waypoints</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">i</span><span class="p">)</span> <span class="o">%</span> <span class="n">waypoints_count</span><span class="p">]</span>
-    
-        <span class="c1"># track_direction 을 계산 </span>
-        <span class="n">track_direction</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">atan2</span><span class="p">(</span><span class="n">next_point</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">y</span><span class="p">,</span> <span class="n">next_point</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span>
-        <span class="n">track_direction</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">track_direction</span><span class="p">)</span>  
-    
-    	<span class="c1"># 각의 차이 (direction_diff) 계산</span>
-        <span class="n">direction_diff</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">track_direction</span> <span class="o">-</span> <span class="n">heading</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">direction_diff</span> <span class="o">&gt;</span> <span class="mi">180</span><span class="p">:</span>
-            <span class="n">direction_diff</span> <span class="o">=</span> <span class="mi">360</span> <span class="o">-</span> <span class="n">direction_diff</span>
-        
-        <span class="c1"># 보상 결정</span>
-        <span class="n">direction_diff_rad</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">direction_diff</span><span class="p">)</span>
-        <span class="n">reward_direction</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">direction_diff_rad</span><span class="p">)</span>
-        
-        <span class="n">reward_2</span> <span class="o">+=</span> <span class="n">reward_direction</span>
-        
-    <span class="n">reward_2</span> <span class="o">/=</span> <span class="n">repeat_count</span>
-        
-    <span class="c1">########### [reward weight sum] ############ </span>
-    <span class="n">reward</span> <span class="o">=</span> <span class="n">reward_1</span> <span class="o">+</span> <span class="n">reward_2</span>
-    
+    <span class="n">reward_heading</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">((</span><span class="n">target_heading_rad</span> <span class="o">-</span> <span class="n">heading_rad</span><span class="p">)</span> <span class="o">*</span> <span class="mi">3</span><span class="p">))</span>
+
+    <span class="n">reward_speed</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="p">((</span><span class="n">speed_target_mean</span> <span class="o">-</span> <span class="n">speed</span><span class="p">)</span> <span class="o">/</span> <span class="n">speed_target_mean</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+
+    <span class="n">reward_steering</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">((</span><span class="n">steering_target_mean_rad</span> <span class="o">-</span> <span class="n">steering_rad</span><span class="p">)</span> <span class="o">*</span> <span class="mi">3</span><span class="p">))</span>
+
+    <span class="n">reward</span> <span class="o">=</span> <span class="n">reward_position</span> <span class="o">*</span> <span class="n">reward_heading</span> <span class="o">*</span> <span class="n">reward_speed</span> <span class="o">*</span> <span class="n">reward_steering</span>
+
     <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span> <span class="n">line</span> <span class="mi">7</span>
+    <span class="n">waypoints2</span> <span class="o">=</span> <span class="c1"># Capston</span>
+                 <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
 </section>
-<section id="sample-3">
-<h2>Sample 3<a class="headerlink" href="#sample-3" title="Permalink to this headline">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<section id="similar-to-supervised-learning-1">
+<h2>similar to supervised learning - 1<a class="headerlink" href="#similar-to-supervised-learning-1" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
+<span class="n">next_interval</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">params</span><span class="p">):</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span>
@@ -1074,7 +1332,7 @@ title="Print to PDF"
 
     <span class="c1"># 타켓 웨이포인트 좌표 구하기</span>
     <span class="n">closest_previous</span><span class="p">,</span> <span class="n">closest_next</span> <span class="o">=</span> <span class="n">closest_waypoints</span>
-    <span class="n">target_waypoint_idx</span> <span class="o">=</span> <span class="p">(</span><span class="n">closest_next</span> <span class="o">+</span> <span class="mi">5</span><span class="p">)</span> <span class="o">%</span> <span class="n">waypoints_len</span>
+    <span class="n">target_waypoint_idx</span> <span class="o">=</span> <span class="p">(</span><span class="n">closest_next</span> <span class="o">+</span> <span class="n">next_interval</span><span class="p">)</span> <span class="o">%</span> <span class="n">waypoints_len</span>
     <span class="n">target_waypoint</span> <span class="o">=</span> <span class="n">waypoints</span><span class="p">[</span><span class="n">target_waypoint_idx</span><span class="p">]</span>
     <span class="n">x_target</span><span class="p">,</span> <span class="n">y_target</span> <span class="o">=</span> <span class="n">target_waypoint</span>
 
@@ -1093,7 +1351,31 @@ title="Print to PDF"
     <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
 </pre></div>
 </div>
-</section>
+</div>
+</div>
+<!-- ```json
+{
+"action_space" : [
+    {"steering_angle":0.0,"speed":4.0,"index":0},
+    {"steering_angle":0.0,"speed":2.4,"index":1},
+    {"steering_angle":5.0,"speed":3.5,"index":2},
+    {"steering_angle":5.0, "speed":1.7,"index":3},
+    {"steering_angle":10.0,"speed":2.4,"index":4},
+    {"steering_angle":10.0,"speed":1.5,"index":5},
+    {"steering_angle":20.0,"speed":2.6,"index":6},
+    {"steering_angle":20.0,"speed":1.3,"index":7},
+    {"steering_angle":20.8,"speed":1.8,"index":8},
+    {"steering_angle":-20.8,"speed":1.8,"index":9},
+    {"steering_angle":26.0,"speed":1.5,"index":10},
+    {"steering_angle":-.0,"speed":1.5,"index":11}
+],
+"sensor": ["FRONT_FACING_CAMERA"],
+"neural_network": "DEEP_CONVOLUTIONAL_NETWORK_SHALLOW",
+"training_algorithm": "clipped_ppo", 
+"action_space_type": "discrete",
+"version": "4"
+}
+``` --></section>
 </section>
 
     <script type="text/x-thebe-config">

@@ -1,0 +1,72 @@
+Traceback (most recent call last):
+  File "/home/dongorae/.local/lib/python3.10/site-packages/jupyter_cache/executors/utils.py", line 51, in single_nb_execution
+    executenb(
+  File "/home/dongorae/.local/lib/python3.10/site-packages/nbclient/client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/home/dongorae/.local/lib/python3.10/site-packages/nbclient/util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/home/dongorae/.local/lib/python3.10/site-packages/nbclient/util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 646, in run_until_complete
+    return future.result()
+  File "/home/dongorae/.local/lib/python3.10/site-packages/nbclient/client.py", line 663, in async_execute
+    await self.async_execute_cell(
+  File "/home/dongorae/.local/lib/python3.10/site-packages/nbclient/client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/home/dongorae/.local/lib/python3.10/site-packages/nbclient/client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import math
+
+def distance_from_line(x, y, x1, y1, x2, y2):
+    return abs((y2-y1)*x - (x2-x1)*y + (x2*y1 - x1*y2)) / math.sqrt((y2-y1)**2 + (x2-x1)**2)
+
+def reward_function(params):
+    waypoints2 = # Capston
+    waypoints = params['waypoints']
+    waypoints_len = len(waypoints) - 1
+    closest_waypoints = params['closest_waypoints']
+    closest_previous, closest_next = closest_waypoints
+    heading = params['heading']
+    heading_rad = math.radians(heading)
+
+    x_target_prev, y_target_prev, speed_target_prev, steering_target_prev = waypoints2[closest_previous]
+    x_target_front, y_target_front, speed_target_front, steering_target_front = waypoints2[closest_next]
+    speed_target_mean = (speed_target_prev + speed_target_front)/2
+    steering_target_mean = (steering_target_prev + steering_target_front)/2
+    steering_target_mean_rad  = math.radians(steering_target_mean)
+    target_heading = math.atan2(y_target_front - y_target_prev, x_target_front - x_target_prev)
+    target_heading_rad = math.radians(target_heading)
+
+    x = params['x']
+    y = params['y']
+
+    track_length = params['track_length']
+    track_length_half = track_length / 2
+
+    speed = params['speed']
+    steering_angle = params['steering_angle']
+    steering_rad = math.radians(steering_angle)
+
+    distance_from_wp2_line = distance_from_line(x, y, x_target_prev, y_target_prev, x_target_front, y_target_front)
+    reward_position = max(0, 1 - (distance_from_wp2_line / track_length_half))
+    
+    reward_heading = max(0, 1 - math.cos((target_heading_rad - heading_rad) * 3))
+
+    reward_speed = max(0, 1 - ((speed_target_mean - speed) / speed_target_mean) ** 2)
+
+    reward_steering = max(0, math.cos((steering_target_mean_rad - steering_rad) * 3))
+
+    reward = reward_position * reward_heading * reward_speed * reward_steering
+
+    return float(reward)
+------------------
+
+[0;36m  Cell [0;32mIn[8], line 7[0;36m[0m
+[0;31m    waypoints2 = # Capston[0m
+[0m                 ^[0m
+[0;31mSyntaxError[0m[0;31m:[0m invalid syntax
+
+SyntaxError: invalid syntax (1812127671.py, line 7)
+

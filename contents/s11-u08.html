@@ -1,35 +1,37 @@
-
 <!DOCTYPE html>
 
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Resources &#8212; AWS DeepRacer School (한국어)</title>
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    <!-- Loaded before other Sphinx assets -->
+    <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+    <link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet"
+        href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9"
+        type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <!-- Pre-loaded scripts that we'll load fully later -->
+    <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -45,937 +47,1095 @@
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script kind="utterances">
 
-    var commentsRunWhenDOMLoaded = cb => {
-    if (document.readyState != 'loading') {
-        cb()
-    } else if (document.addEventListener) {
-        document.addEventListener('DOMContentLoaded', cb)
-    } else {
-        document.attachEvent('onreadystatechange', function() {
-        if (document.readyState == 'complete') cb()
-        })
-    }
-}
+        var commentsRunWhenDOMLoaded = cb => {
+            if (document.readyState != 'loading') {
+                cb()
+            } else if (document.addEventListener) {
+                document.addEventListener('DOMContentLoaded', cb)
+            } else {
+                document.attachEvent('onreadystatechange', function () {
+                    if (document.readyState == 'complete') cb()
+                })
+            }
+        }
 
-var addUtterances = () => {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "https://utteranc.es/client.js";
-    script.async = "async";
+        var addUtterances = () => {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://utteranc.es/client.js";
+            script.async = "async";
 
-    script.setAttribute("repo", "ai-castle/aws-deepracer-school-ko");
-    script.setAttribute("issue-term", "pathname");
-    script.setAttribute("theme", "github-light");
-    script.setAttribute("label", "💬 comment");
-    script.setAttribute("crossorigin", "anonymous");
+            script.setAttribute("repo", "ai-castle/aws-deepracer-school-ko");
+            script.setAttribute("issue-term", "pathname");
+            script.setAttribute("theme", "github-light");
+            script.setAttribute("label", "💬 comment");
+            script.setAttribute("crossorigin", "anonymous");
 
-    sections = document.querySelectorAll("div.section");
-    if (sections !== null) {
-        section = sections[sections.length-1];
-        section.appendChild(script);
-    }
-}
-commentsRunWhenDOMLoaded(addUtterances);
-</script>
+            sections = document.querySelectorAll("div.section");
+            if (sections !== null) {
+                section = sections[sections.length - 1];
+                section.appendChild(script);
+            }
+        }
+        commentsRunWhenDOMLoaded(addUtterances);
+    </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output, .cell_output"
+    </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="shortcut icon" href="../_static/favicon.ico" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="prev" title="모델 업로드 및 리소스 정리" href="s11-u07-6.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
-    
+
 
     <!-- Google Analytics -->
-    
-  </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
 
-    
+</head>
+
+<body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    <!-- Checkboxes to toggle the left sidebar -->
+    <input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation"
+        aria-label="Toggle navigation sidebar">
+    <label class="overlay overlay-navbar" for="__navigation">
+        <div class="visually-hidden">Toggle navigation sidebar</div>
+    </label>
+    <!-- Checkboxes to toggle the in-page toc -->
+    <input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc"
+        aria-label="Toggle in-page Table of Contents">
+    <label class="overlay overlay-pagetoc" for="__page-toc">
+        <div class="visually-hidden">Toggle in-page Table of Contents</div>
+    </label>
+    <!-- Headers at the top -->
+    <div class="announcement header-item noprint"></div>
+    <div class="header header-item noprint"></div>
+
+
     <div class="container-fluid" id="banner"></div>
 
-    
+
 
     <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
-      
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
-      
-      
-      <img src="../_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">AWS DeepRacer School (한국어)</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../intro.html">
-                    AWS DeepRacer School
-                </a>
-            </li>
-        </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Join the Course
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../proposal.html">
-   위탁 교육 &amp; 행사 대행 🌟
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../premium/01.html">
-   프리미엄 과정 🚀
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../premium/02.html">
-     프리미엄 과정 요금
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../premium/03.html">
-     프리미엄 과정 신청하기
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../premium/04.html">
-     비디오 재생 문제 해결하기
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../premium/05.html">
-     강의 비디오 미리보기
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://inf.run/aXoi">
-   인프런에서 강의 수강
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Contents
- </span>
-</p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="s01-u01.html">
-   AWS DeepRacer 개요
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s01-u02.html">
-     AWS DeepRacer 란
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s01-u03.html">
-     DeepRacer를 통해 배울 수 있는 것
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s01-u04.html">
-     클라우드 컴퓨팅과 AWS
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s01-u05.html">
-     DeepRacer 워크플로우
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s01-u06.html">
-     DeepRacer의 작동원리 (1)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s01-u07.html">
-     DeepRacer의 작동원리 (2)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s01-u08.html">
-     DeepRacer 요금 정책
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="s02-u01.html">
-   AWS 계정
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s02-u02.html">
-     AWS 계정 종류
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s02-u03.html">
-     AWS 루트계정 가입
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s02-u04.html">
-     AWS 콘솔 로그인
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s02-u05.html">
-     AWS 루트계정 보안 설정
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s02-u06.html">
-     요금 및 프리티어 사용량 확인
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="s03-u01.html">
-   DeepRacer 콘솔 둘러보기
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s03-u02.html">
-     콘솔 메뉴구성 개요
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s03-u03.html">
-     Racing League 메뉴 알아보기
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s03-u04.html">
-     Reinforcement Learning 메뉴 알아보기
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s03-u05.html">
-     Multi-user management 메뉴 알아보기
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s03-u06.html">
-     Resources 메뉴 알아보기
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s03-u07.html">
-     Next challenge 메뉴 알아보기
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="s04-u01.html">
-   모델 훈련 (Model Training)
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s04-u02.html">
-     레이스 종류 (Race Type)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s04-u03.html">
-     센서와 차량 종류
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s04-u04.html">
-     차량 생성 실습 (Build a new vehicle)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s04-u05.html">
-     모델 훈련 실습
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s04-u06.html">
-     Actions 메뉴 알아보기 (Clone, Delete, Copy to S3, Download physical car model)
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="s05-u01.html">
-   기계학습과 딥러닝 (Machine Learning &amp; Deep Learning)
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s05-u02.html">
-     머신러닝(Machine Learning) 개요
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s05-u03.html">
-     기계가 학습하는 방법
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s05-u04.html">
-     하이퍼파라미터 (Hyperparameters)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s05-u05.html">
-     딥러닝(Deep Learning)과 DNN
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s05-u06.html">
-     CNN과 DeepRacer 모델
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s05-u07.html">
-     딥러닝 이슈
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="s06-u01.html">
-   강화학습 (Reinforcement Learning)
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-  <label for="toctree-checkbox-7">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s06-u02.html">
-     강화학습 개요
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s06-u03.html">
-     강화학습에서의 목표
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s06-u04.html">
-     강화학습 알고리즘의 종류
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s06-u05.html">
-     강화학습의 데이터 구조
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s06-u06.html">
-     강화학습에서의 모델 훈련
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s06-u07.html">
-     강화학습 이슈
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s06-u08.html">
-     하이퍼파라미터 및 용어 정리
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="s07-u01.html">
-   파이썬 (Python) 기초 문법
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-  <label for="toctree-checkbox-8">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s07-u02.html">
-     코딩 실습환경 - 파이썬과 Colab
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s07-u03.html">
-     출력(print)과 변수
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s07-u04.html">
-     자료형
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s07-u05.html">
-     연산
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s07-u06.html">
-     리스트(list) 다루기
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s07-u07.html">
-     math 라이브러리
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s07-u08.html">
-     if 조건문
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s07-u09.html">
-     for 반복문
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s07-u10.html">
-     while 조건반복문
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s07-u11.html">
-     함수 (function)
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="s08-u01.html">
-   보상 함수 (Reward Function)
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s08-u02.html">
-     보상함수의 입력 파라미터 (params)
-    </a>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="s08-u03.html">
-     보상함수 예제
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
-    <label for="toctree-checkbox-10">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="s08-u03-0.html">
-       기타 셈플
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s08-u04.html">
-     보상함수 실험
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s08-u05.html">
-     트랙 웨이포인트(waypoints) 시각화
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s08-u06.html">
-     입력 파라미터(params) 셈플
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="s09-u01.html">
-   로그 분석 (Log Analysis)
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
-  <label for="toctree-checkbox-11">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s09-u02.html">
-     Reward graph
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s09-u03.html">
-     download logs
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s09-u04.html">
-     로그분석 예제
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="s10-u01.html">
-   DeepRacer 모델을 실제 차량에 배포
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
-  <label for="toctree-checkbox-12">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s10-u02.html">
-     실제 차량에 대해 알아보기
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s10-u03.html">
-     차량 콘솔에 접속하기
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s10-u04.html">
-     모델 업로드하여 자율주행하기
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s10-u05.html">
-     차량 보정(Calibrate)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s10-u06.html">
-     실제 트랙 구축하기
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="s11-u01.html">
-   Tips
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
-  <label for="toctree-checkbox-13">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2">
-    <a class="reference internal" href="s11-u02.html">
-     DeepRacer Student
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s11-u03.html">
-     multi user mode
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s11-u04.html">
-     Community Race 생성하기
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s11-u05.html">
-     모델을 S3로 내보내기 및 가져오기
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="s11-u06.html">
-     온라인 리그에 모델 제출 자동화
-    </a>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="s11-u07.html">
-     DRfC (DeepRacer for Cloud)
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-    <label for="toctree-checkbox-14">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="s11-u07-0.html">
-       DRfC 시작하기
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="s11-u07-1.html">
-       AMI 등록
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="s11-u07-2.html">
-       템플릿 등록
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="s11-u07-3.html">
-       훈련 환경 설정
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="s11-u07-4.html">
-       훈련 실행하기
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="s11-u07-5.html">
-       시뮬레이션 모니터링
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="s11-u07-6.html">
-       모델 업로드 및 리소스 정리
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Resources
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Resources
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference external" href="https://deepracer-school-en.ai-castle.com">
-   English
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://ai-castle.com">
-   AI Castle
-  </a>
- </li>
-</ul>
+        <div class="row">
 
-    </div>
-</nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-        </div>
-    </div>
-    <div id="rtd-footer-container"></div>
-</div>
+            <!-- Sidebar -->
+            <div class="bd-sidebar noprint" id="site-navigation">
+                <div class="bd-sidebar__content">
+                    <div class="bd-sidebar__top">
+                        <div class="navbar-brand-box">
+                            <a class="navbar-brand text-wrap" href="../index.html">
 
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
+                                <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
 
 
 
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
+                                <img src="../_static/logo.png" class="logo" alt="logo">
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
 
-</label>
+                                <h1 class="site-logo" id="site-title">AWS DeepRacer School (한국어)</h1>
 
-        
-    </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/contents/s11-u08.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
-  
+                            </a>
+                        </div>
+                        <form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+                            <i class="icon fas fa-search"></i>
+                            <input type="search" class="form-control" name="q" id="search-input"
+                                placeholder="Search this book..." aria-label="Search this book..." autocomplete="off">
+                        </form>
+                        <nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+                            <div class="bd-toc-item active">
 
-<span class="headerbtn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
+                                <ul class="nav bd-sidenav bd-sidenav__home-link">
+                                    <li class="toctree-l1">
+                                        <a class="reference internal" href="../intro.html">
+                                            AWS DeepRacer School
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p aria-level="2" class="caption" role="heading">
+                                    <span class="caption-text">
+                                        Join the Course
+                                    </span>
+                                </p>
+                                <ul class="nav bd-sidenav">
+                                    <li class="toctree-l1">
+                                        <a class="reference internal" href="../proposal.html">
+                                            위탁 교육 &amp; 행사 대행 🌟
+                                        </a>
+                                    </li>
+                                    <li class="toctree-l1 has-children">
+                                        <a class="reference internal" href="../premium/01.html">
+                                            프리미엄 과정 🚀
+                                        </a>
+                                        <input class="toctree-checkbox" id="toctree-checkbox-1"
+                                            name="toctree-checkbox-1" type="checkbox" />
+                                        <label for="toctree-checkbox-1">
+                                            <i class="fas fa-chevron-down">
+                                            </i>
+                                        </label>
+                                        <ul>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="../premium/02.html">
+                                                    프리미엄 과정 요금
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="../premium/03.html">
+                                                    프리미엄 과정 신청하기
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="../premium/04.html">
+                                                    비디오 재생 문제 해결하기
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="../premium/05.html">
+                                                    강의 비디오 미리보기
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="toctree-l1">
+                                        <a class="reference external" href="https://inf.run/aXoi">
+                                            인프런에서 강의 수강
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p aria-level="2" class="caption" role="heading">
+                                    <span class="caption-text">
+                                        Contents
+                                    </span>
+                                </p>
+                                <ul class="current nav bd-sidenav">
+                                    <li class="toctree-l1 has-children">
+                                        <a class="reference internal" href="s01-u01.html">
+                                            AWS DeepRacer 개요
+                                        </a>
+                                        <input class="toctree-checkbox" id="toctree-checkbox-2"
+                                            name="toctree-checkbox-2" type="checkbox" />
+                                        <label for="toctree-checkbox-2">
+                                            <i class="fas fa-chevron-down">
+                                            </i>
+                                        </label>
+                                        <ul>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s01-u02.html">
+                                                    AWS DeepRacer 란
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s01-u03.html">
+                                                    DeepRacer를 통해 배울 수 있는 것
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s01-u04.html">
+                                                    클라우드 컴퓨팅과 AWS
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s01-u05.html">
+                                                    DeepRacer 워크플로우
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s01-u06.html">
+                                                    DeepRacer의 작동원리 (1)
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s01-u07.html">
+                                                    DeepRacer의 작동원리 (2)
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s01-u08.html">
+                                                    DeepRacer 요금 정책
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="toctree-l1 has-children">
+                                        <a class="reference internal" href="s02-u01.html">
+                                            AWS 계정
+                                        </a>
+                                        <input class="toctree-checkbox" id="toctree-checkbox-3"
+                                            name="toctree-checkbox-3" type="checkbox" />
+                                        <label for="toctree-checkbox-3">
+                                            <i class="fas fa-chevron-down">
+                                            </i>
+                                        </label>
+                                        <ul>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s02-u02.html">
+                                                    AWS 계정 종류
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s02-u03.html">
+                                                    AWS 루트계정 가입
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s02-u04.html">
+                                                    AWS 콘솔 로그인
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s02-u05.html">
+                                                    AWS 루트계정 보안 설정
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s02-u06.html">
+                                                    요금 및 프리티어 사용량 확인
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="toctree-l1 has-children">
+                                        <a class="reference internal" href="s03-u01.html">
+                                            DeepRacer 콘솔 둘러보기
+                                        </a>
+                                        <input class="toctree-checkbox" id="toctree-checkbox-4"
+                                            name="toctree-checkbox-4" type="checkbox" />
+                                        <label for="toctree-checkbox-4">
+                                            <i class="fas fa-chevron-down">
+                                            </i>
+                                        </label>
+                                        <ul>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s03-u02.html">
+                                                    콘솔 메뉴구성 개요
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s03-u03.html">
+                                                    Racing League 메뉴 알아보기
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s03-u04.html">
+                                                    Reinforcement Learning 메뉴 알아보기
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s03-u05.html">
+                                                    Multi-user management 메뉴 알아보기
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s03-u06.html">
+                                                    Resources 메뉴 알아보기
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s03-u07.html">
+                                                    Next challenge 메뉴 알아보기
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="toctree-l1 has-children">
+                                        <a class="reference internal" href="s04-u01.html">
+                                            모델 훈련 (Model Training)
+                                        </a>
+                                        <input class="toctree-checkbox" id="toctree-checkbox-5"
+                                            name="toctree-checkbox-5" type="checkbox" />
+                                        <label for="toctree-checkbox-5">
+                                            <i class="fas fa-chevron-down">
+                                            </i>
+                                        </label>
+                                        <ul>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s04-u02.html">
+                                                    레이스 종류 (Race Type)
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s04-u03.html">
+                                                    센서와 차량 종류
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s04-u04.html">
+                                                    차량 생성 실습 (Build a new vehicle)
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s04-u05.html">
+                                                    모델 훈련 실습
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s04-u06.html">
+                                                    Actions 메뉴 알아보기 (Clone, Delete, Copy to S3, Download physical car
+                                                    model)
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="toctree-l1 has-children">
+                                        <a class="reference internal" href="s05-u01.html">
+                                            기계학습과 딥러닝 (Machine Learning &amp; Deep Learning)
+                                        </a>
+                                        <input class="toctree-checkbox" id="toctree-checkbox-6"
+                                            name="toctree-checkbox-6" type="checkbox" />
+                                        <label for="toctree-checkbox-6">
+                                            <i class="fas fa-chevron-down">
+                                            </i>
+                                        </label>
+                                        <ul>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s05-u02.html">
+                                                    머신러닝(Machine Learning) 개요
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s05-u03.html">
+                                                    기계가 학습하는 방법
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s05-u04.html">
+                                                    하이퍼파라미터 (Hyperparameters)
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s05-u05.html">
+                                                    딥러닝(Deep Learning)과 DNN
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s05-u06.html">
+                                                    CNN과 DeepRacer 모델
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s05-u07.html">
+                                                    딥러닝 이슈
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="toctree-l1 has-children">
+                                        <a class="reference internal" href="s06-u01.html">
+                                            강화학습 (Reinforcement Learning)
+                                        </a>
+                                        <input class="toctree-checkbox" id="toctree-checkbox-7"
+                                            name="toctree-checkbox-7" type="checkbox" />
+                                        <label for="toctree-checkbox-7">
+                                            <i class="fas fa-chevron-down">
+                                            </i>
+                                        </label>
+                                        <ul>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s06-u02.html">
+                                                    강화학습 개요
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s06-u03.html">
+                                                    강화학습에서의 목표
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s06-u04.html">
+                                                    강화학습 알고리즘의 종류
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s06-u05.html">
+                                                    강화학습의 데이터 구조
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s06-u06.html">
+                                                    강화학습에서의 모델 훈련
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s06-u07.html">
+                                                    강화학습 이슈
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s06-u08.html">
+                                                    하이퍼파라미터 및 용어 정리
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="toctree-l1 has-children">
+                                        <a class="reference internal" href="s07-u01.html">
+                                            파이썬 (Python) 기초 문법
+                                        </a>
+                                        <input class="toctree-checkbox" id="toctree-checkbox-8"
+                                            name="toctree-checkbox-8" type="checkbox" />
+                                        <label for="toctree-checkbox-8">
+                                            <i class="fas fa-chevron-down">
+                                            </i>
+                                        </label>
+                                        <ul>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s07-u02.html">
+                                                    코딩 실습환경 - 파이썬과 Colab
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s07-u03.html">
+                                                    출력(print)과 변수
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s07-u04.html">
+                                                    자료형
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s07-u05.html">
+                                                    연산
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s07-u06.html">
+                                                    리스트(list) 다루기
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s07-u07.html">
+                                                    math 라이브러리
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s07-u08.html">
+                                                    if 조건문
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s07-u09.html">
+                                                    for 반복문
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s07-u10.html">
+                                                    while 조건반복문
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s07-u11.html">
+                                                    함수 (function)
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="toctree-l1 has-children">
+                                        <a class="reference internal" href="s08-u01.html">
+                                            보상 함수 (Reward Function)
+                                        </a>
+                                        <input class="toctree-checkbox" id="toctree-checkbox-9"
+                                            name="toctree-checkbox-9" type="checkbox" />
+                                        <label for="toctree-checkbox-9">
+                                            <i class="fas fa-chevron-down">
+                                            </i>
+                                        </label>
+                                        <ul>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s08-u02.html">
+                                                    보상함수의 입력 파라미터 (params)
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2 has-children">
+                                                <a class="reference internal" href="s08-u03.html">
+                                                    보상함수 예제
+                                                </a>
+                                                <input class="toctree-checkbox" id="toctree-checkbox-10"
+                                                    name="toctree-checkbox-10" type="checkbox" />
+                                                <label for="toctree-checkbox-10">
+                                                    <i class="fas fa-chevron-down">
+                                                    </i>
+                                                </label>
+                                                <ul>
+                                                    <li class="toctree-l3">
+                                                        <a class="reference internal" href="s08-u03-0.html">
+                                                            기타 셈플
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s08-u04.html">
+                                                    보상함수 실험
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s08-u05.html">
+                                                    트랙 웨이포인트(waypoints) 시각화
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s08-u06.html">
+                                                    입력 파라미터(params) 셈플
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="toctree-l1 has-children">
+                                        <a class="reference internal" href="s09-u01.html">
+                                            로그 분석 (Log Analysis)
+                                        </a>
+                                        <input class="toctree-checkbox" id="toctree-checkbox-11"
+                                            name="toctree-checkbox-11" type="checkbox" />
+                                        <label for="toctree-checkbox-11">
+                                            <i class="fas fa-chevron-down">
+                                            </i>
+                                        </label>
+                                        <ul>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s09-u02.html">
+                                                    Reward graph
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s09-u03.html">
+                                                    download logs
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s09-u04.html">
+                                                    로그분석 예제
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="toctree-l1 has-children">
+                                        <a class="reference internal" href="s10-u01.html">
+                                            DeepRacer 모델을 실제 차량에 배포
+                                        </a>
+                                        <input class="toctree-checkbox" id="toctree-checkbox-12"
+                                            name="toctree-checkbox-12" type="checkbox" />
+                                        <label for="toctree-checkbox-12">
+                                            <i class="fas fa-chevron-down">
+                                            </i>
+                                        </label>
+                                        <ul>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s10-u02.html">
+                                                    실제 차량에 대해 알아보기
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s10-u03.html">
+                                                    차량 콘솔에 접속하기
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s10-u04.html">
+                                                    모델 업로드하여 자율주행하기
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s10-u05.html">
+                                                    차량 보정(Calibrate)
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s10-u06.html">
+                                                    실제 트랙 구축하기
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="toctree-l1 current active has-children">
+                                        <a class="reference internal" href="s11-u01.html">
+                                            Tips
+                                        </a>
+                                        <input checked="" class="toctree-checkbox" id="toctree-checkbox-13"
+                                            name="toctree-checkbox-13" type="checkbox" />
+                                        <label for="toctree-checkbox-13">
+                                            <i class="fas fa-chevron-down">
+                                            </i>
+                                        </label>
+                                        <ul class="current">
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s11-u02.html">
+                                                    DeepRacer Student
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s11-u03.html">
+                                                    multi user mode
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s11-u04.html">
+                                                    Community Race 생성하기
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s11-u05.html">
+                                                    모델을 S3로 내보내기 및 가져오기
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2">
+                                                <a class="reference internal" href="s11-u06.html">
+                                                    온라인 리그에 모델 제출 자동화
+                                                </a>
+                                            </li>
+                                            <li class="toctree-l2 has-children">
+                                                <a class="reference internal" href="s11-u07.html">
+                                                    DRfC (DeepRacer for Cloud)
+                                                </a>
+                                                <input class="toctree-checkbox" id="toctree-checkbox-14"
+                                                    name="toctree-checkbox-14" type="checkbox" />
+                                                <label for="toctree-checkbox-14">
+                                                    <i class="fas fa-chevron-down">
+                                                    </i>
+                                                </label>
+                                                <ul>
+                                                    <li class="toctree-l3">
+                                                        <a class="reference internal" href="s11-u07-0.html">
+                                                            DRfC 시작하기
+                                                        </a>
+                                                    </li>
+                                                    <li class="toctree-l3">
+                                                        <a class="reference internal" href="s11-u07-1.html">
+                                                            AMI 등록
+                                                        </a>
+                                                    </li>
+                                                    <li class="toctree-l3">
+                                                        <a class="reference internal" href="s11-u07-2.html">
+                                                            템플릿 등록
+                                                        </a>
+                                                    </li>
+                                                    <li class="toctree-l3">
+                                                        <a class="reference internal" href="s11-u07-3.html">
+                                                            훈련 환경 설정
+                                                        </a>
+                                                    </li>
+                                                    <li class="toctree-l3">
+                                                        <a class="reference internal" href="s11-u07-4.html">
+                                                            훈련 실행하기
+                                                        </a>
+                                                    </li>
+                                                    <li class="toctree-l3">
+                                                        <a class="reference internal" href="s11-u07-5.html">
+                                                            시뮬레이션 모니터링
+                                                        </a>
+                                                    </li>
+                                                    <li class="toctree-l3">
+                                                        <a class="reference internal" href="s11-u07-6.html">
+                                                            모델 업로드 및 리소스 정리
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="toctree-l2 current active">
+                                                <a class="current reference internal" href="#">
+                                                    Resources
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p aria-level="2" class="caption" role="heading">
+                                    <span class="caption-text">
+                                        Resources
+                                    </span>
+                                </p>
+                                <ul class="nav bd-sidenav">
+                                    <li class="toctree-l1">
+                                        <a class="reference external" href="https://deepracer-school-en.ai-castle.com">
+                                            English
+                                        </a>
+                                    </li>
+                                    <li class="toctree-l1">
+                                        <a class="reference external" href="https://ai-castle.com">
+                                            AI Castle
+                                        </a>
+                                    </li>
+                                </ul>
 
-      </li>
-      
-    </ul>
-  </div>
-</div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="bd-sidebar__bottom">
+                        <!-- To handle the deprecated key -->
 
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/contents/s11-u08.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-    </div>
-</div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-</div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Resources</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
                     </div>
                 </div>
+                <div id="rtd-footer-container"></div>
             </div>
-            <main id="main-content" role="main">
-                
-              <div>
-                
-  <section class="tex2jax_ignore mathjax_ignore" id="resources">
-<h1>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">#</a></h1>
-<p style="display: flex; justify-content: space-between; align-items: center;">
-    <b>Unit 08. Resources</b>
-    <span><b>Section 11. Tips</b></span>
-</p><hr class="docutils" />
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.aws.com">AWS 홈페이지</a></p></li>
-<li><p><a class="reference external" href="https://console.aws.amazon.com">AWS 콘솔 페이지</a></p></li>
-<li><p><a class="reference external" href="https://aws.amazon.com/deepracer">딥레이서 공식 웹사이트</a></p></li>
-<li><p><a class="reference external" href="https://youtu.be/eVccQ82BekI">시행착오 (Youtube)</a></p></li>
-<li><p><a class="reference external" href="https://youtu.be/kopoLzvh5jY">숨바꼭질 (Youtube)</a></p></li>
-<li><p><a class="reference external" href="https://aws.amazon.com/deepracer/pricing">딥레이서 요금</a></p></li>
-<li><p><a class="reference external" href="https://www.amazon.com/AWS-DeepRacer-Fully-autonomous-developers/dp/B07JMHRKQG?th=1">딥레이서 실제 차량 판매처</a></p></li>
-<li><p><a class="reference external" href="https://student.deepracer.com/">DeepRacer Student</a></p></li>
-<li><p>DeepRacer League</p>
-<ul>
-<li><p><a class="reference external" href="https://aws.amazon.com/deepracer/league">WebPage</a></p></li>
-<li><p><a class="reference external" href="https://d1.awsstatic.com/deepracer/AWS_DEEPRACER_Virtual_Circuit_Rules_FINAL_3_1_2023.pdf">Docs</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference external" href="https://youtu.be/vGazyH6fQQ4">탁구치는 비둘기</a></p></li>
-<li><p><a class="reference external" href="https://github.com/ai-castle/deepracer-lecture-public-data/blob/main/section_06/Discount_Factor_Rate.ipynb">할인계수 감가율 그래프</a></p></li>
-<li><p><a class="reference external" href="https://drive.google.com">구글 드라이브</a></p></li>
-<li><p><a class="reference external" href="https://github.com/ai-castle/deepracer-lecture-public-data/raw/main/section_07/jupyter_notebook/clear_outputs/%ED%95%9C%EA%B5%AD%EC%96%B4/%EC%95%95%EC%B6%95.zip">파이썬 실습 (전체 자료 다운로드)</a></p></li>
-<li><p><a class="reference external" href="https://docs.aws.amazon.com/deepracer/latest/developerguide/deepracer-reward-function-input.html">보상함수의 입력 파라미터</a></p></li>
-<li><p><a class="reference external" href="https://colab.research.google.com/github/ai-castle/deepracer-lecture-public-data/blob/main/section_08/Track_Waypoints_Visualization.ipynb">트랙 웨이포인트 시각화</a></p></li>
-<li><p><a class="reference external" href="https://github.com/aws-deepracer-community/deepracer-race-data/tree/main/raw_data/tracks">트랙 정보 확인</a></p></li>
-<li><p><a class="reference external" href="https://github.com/ai-castle/deepracer-lecture-public-data/blob/main/section_08/Input_params_samples.ipynb">입력 파라미터 실제 셈플</a></p></li>
-<li><p><a class="reference external" href="https://github.com/ai-castle/deepracer-lecture-public-data/tree/main/log_data_samples">다운로드 로그 셈플</a></p></li>
-<li><p>로그 분석 예제</p>
-<ul>
-<li><p><a class="reference external" href="https://colab.research.google.com/github/ai-castle/deepracer-lecture-public-data/blob/main/section_09/Log_Analysis.ipynb">실습 예제</a></p></li>
-<li><p><a class="reference external" href="https://github.com/aws-deepracer-community/deepracer-analysis">More</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference external" href="https://deepracer.aws">디바이스 콘솔</a></p></li>
-<li><p><a class="reference external" href="https://console.aws.amazon.com/deepracer">딥레이서 콘솔</a></p></li>
-<li><p><a class="reference external" href="https://docs.aws.amazon.com/deepracer/latest/developerguide/deepracer-build-your-track.html">트랙 구축 방법</a></p></li>
-<li><p><a class="reference external" href="https://www.amazon.com/gp/browse.html?node=32957528011">트랙 및 펜스 구매</a></p></li>
-<li><p><a class="reference external" href="https://github.com/ai-castle/deepracer-lecture-public-data/blob/main/section_11/Compress_File_of_S3_Folder_in_CloudShell.md">S3에서 모델이 담긴 폴더 압축하기</a></p></li>
-<li><p><a class="reference external" href="https://github.com/ai-castle/deepracer-lecture-public-data/blob/main/section_11/Automated_Model_Submission_in_CloudShell.md">클라우드쉘에서 딥레이서 모델 제출 자동화 스크립트</a></p></li>
-<li><p><a class="reference external" href="https://aws-deepracer-community.github.io/deepracer-for-cloud">DRfC(DeepRacer for Cloud)</a></p></li>
-</ul>
-<hr class="docutils" />
-<ul class="simple">
-<li><p><a class="reference external" href="https://deepracing.io/">AWS DeepRacer Community</a></p>
-<ul>
-<li><p><a class="reference external" href="http://join.deepracing.io/">slack</a></p></li>
-<li><p><a class="reference external" href="https://blog.deepracing.io/">blog</a></p></li>
-<li><p><a class="reference external" href="https://wiki.deepracing.io/">Wiki</a></p>
-<ul>
-<li><p><a class="reference external" href="https://wiki.deepracing.io/Training_the_AWS_DeepRacer#Sample_rewards">Sample Reward Function</a></p></li>
-<li><p><a class="reference external" href="https://wiki.deepracing.io/Customise_Local_Training">Customise Local Training</a></p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr class="docutils" />
-<ul class="simple">
-<li><p><a class="reference external" href="https://falktan.medium.com/aws-deepracer-how-to-train-a-model-in-15-minutes-a07ab77fb793">How to train a model in 15 minutes</a></p></li>
-<li><p><a class="reference external" href="https://github.com/dgnzlz/Capstone_AWS_DeepRacer">Capston</a></p>
-<ul>
-<li><p><a class="reference external" href="https://github.com/dgnzlz/Capstone_AWS_DeepRacer/tree/master/Compute_Speed_And_Actions">Compute_Speed_And_Actions</a></p>
-<ul>
-<li><p><a class="reference external" href="https://github.com/dgnzlz/Capstone_AWS_DeepRacer/blob/master/Compute_Speed_And_Actions/Race-Line-Calculation.ipynb">Race-Line-Calculation.ipynb</a></p></li>
-<li><p><a class="reference external" href="https://github.com/dgnzlz/Capstone_AWS_DeepRacer/blob/master/Compute_Speed_And_Actions/RaceLine_Speed_ActionSpace.ipynb">RaceLine_Speed_ActionSpace.ipynb</a></p>
-<ul>
-<li><p><a class="reference external" href="https://colab.research.google.com/github/ai-castle/deepracer-lecture-public-data/blob/main/section_11/RaceLine_Speed_ActionSpace.ipynb">재구성 Colab 바로가기</a></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><a class="reference external" href="https://github.com/dgnzlz/Capstone_AWS_DeepRacer/blob/master/Reward_Function/reward_function.py">Reward_Function</a></p></li>
-</ul>
-</li>
-</ul>
-</section>
 
-    <script type="text/x-thebe-config">
+
+
+
+
+
+            <!-- A tiny helper pixel to detect if we've scrolled -->
+            <div class="sbt-scroll-pixel-helper"></div>
+            <!-- Main content -->
+            <div class="col py-0 content-container">
+
+                <div class="header-article row sticky-top noprint">
+
+
+
+
+                    <div class="col py-1 d-flex header-article-main">
+                        <div class="header-article__left">
+
+                            <label for="__navigation" class="headerbtn" data-toggle="tooltip" data-placement="right"
+                                title="Toggle navigation">
+
+
+                                <span class="headerbtn__icon-container">
+                                    <i class="fas fa-bars"></i>
+                                </span>
+
+                            </label>
+
+
+                        </div>
+                        <div class="header-article__right">
+                            <div class="menu-dropdown menu-dropdown-launch-buttons">
+                                <button class="headerbtn menu-dropdown__trigger"
+                                    aria-label="Launch interactive content">
+                                    <i class="fas fa-rocket"></i>
+                                </button>
+                                <div class="menu-dropdown__content">
+                                    <ul>
+                                        <li>
+                                            <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/contents/s11-u08.ipynb"
+                                                class="headerbtn" data-toggle="tooltip" data-placement="left"
+                                                title="Launch on Binder">
+
+
+                                                <span class="headerbtn__icon-container">
+
+                                                    <img src="../_static/images/logo_binder.svg">
+                                                </span>
+                                                <span class="headerbtn__text-container">Binder</span>
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <button onclick="toggleFullScreen()" class="headerbtn" data-toggle="tooltip"
+                                data-placement="bottom" title="Fullscreen mode">
+
+
+                                <span class="headerbtn__icon-container">
+                                    <i class="fas fa-expand"></i>
+                                </span>
+
+                            </button>
+
+                            <div class="menu-dropdown menu-dropdown-download-buttons">
+                                <button class="headerbtn menu-dropdown__trigger" aria-label="Download this page">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <div class="menu-dropdown__content">
+                                    <ul>
+                                        <li>
+                                            <a href="../_sources/contents/s11-u08.ipynb" class="headerbtn"
+                                                data-toggle="tooltip" data-placement="left"
+                                                title="Download source file">
+
+
+                                                <span class="headerbtn__icon-container">
+                                                    <i class="fas fa-file"></i>
+                                                </span>
+                                                <span class="headerbtn__text-container">.ipynb</span>
+                                            </a>
+
+                                        </li>
+
+                                        <li>
+
+                                            <button onclick="printPdf(this)" class="headerbtn" data-toggle="tooltip"
+                                                data-placement="left" title="Print to PDF">
+
+
+                                                <span class="headerbtn__icon-container">
+                                                    <i class="fas fa-file-pdf"></i>
+                                                </span>
+                                                <span class="headerbtn__text-container">.pdf</span>
+                                            </button>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Table of contents -->
+                    <div class="col-md-3 bd-toc show noprint">
+                    </div>
+                </div>
+                <div class="article row">
+                    <div class="col pl-md-3 pl-lg-5 content-container">
+                        <!-- Table of contents that is only displayed when printing the page -->
+                        <div id="jb-print-docs-body" class="onlyprint">
+                            <h1>Resources</h1>
+                            <!-- Table of contents -->
+                            <div id="print-main-content">
+                                <div id="jb-print-toc">
+
+                                </div>
+                            </div>
+                        </div>
+                        <main id="main-content" role="main">
+
+                            <div>
+
+                                <section class="tex2jax_ignore mathjax_ignore" id="resources">
+                                    <h1>Resources<a class="headerlink" href="#resources"
+                                            title="Permalink to this headline">#</a></h1>
+                                    <p style="display: flex; justify-content: space-between; align-items: center;">
+                                        <b>Unit 08. Resources</b>
+                                        <span><b>Section 11. Tips</b></span>
+                                    </p>
+                                    <hr class="docutils" />
+                                    <ul class="simple">
+                                        <li>
+                                            <p><a class="reference external" href="https://www.aws.com">AWS 홈페이지</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external" href="https://console.aws.amazon.com">AWS
+                                                    콘솔 페이지</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://aws.amazon.com/deepracer">딥레이서 공식 웹사이트</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external" href="https://youtu.be/eVccQ82BekI">시행착오
+                                                    (Youtube)</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external" href="https://youtu.be/kopoLzvh5jY">숨바꼭질
+                                                    (Youtube)</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://aws.amazon.com/deepracer/pricing">딥레이서 요금</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://www.amazon.com/AWS-DeepRacer-Fully-autonomous-developers/dp/B07JMHRKQG?th=1">딥레이서
+                                                    실제 차량 판매처</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://student.deepracer.com/">DeepRacer Student</a></p>
+                                        </li>
+                                        <li>
+                                            <p>DeepRacer League</p>
+                                            <ul>
+                                                <li>
+                                                    <p><a class="reference external"
+                                                            href="https://aws.amazon.com/deepracer/league">WebPage</a>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p><a class="reference external"
+                                                            href="https://d1.awsstatic.com/deepracer/AWS_DEEPRACER_Virtual_Circuit_Rules_FINAL_3_1_2023.pdf">Docs</a>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external" href="https://youtu.be/vGazyH6fQQ4">탁구치는
+                                                    비둘기</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://github.com/ai-castle/deepracer-lecture-public-data/blob/main/section_06/Discount_Factor_Rate.ipynb">할인계수
+                                                    감가율 그래프</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external" href="https://drive.google.com">구글 드라이브</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://github.com/ai-castle/deepracer-lecture-public-data/raw/main/section_07/jupyter_notebook/clear_outputs/%ED%95%9C%EA%B5%AD%EC%96%B4/%EC%95%95%EC%B6%95.zip">파이썬
+                                                    실습 (전체 자료 다운로드)</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://docs.aws.amazon.com/deepracer/latest/developerguide/deepracer-reward-function-input.html">보상함수의
+                                                    입력 파라미터</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://colab.research.google.com/github/ai-castle/deepracer-lecture-public-data/blob/main/section_08/Track_Waypoints_Visualization.ipynb">트랙
+                                                    웨이포인트 시각화</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://github.com/aws-deepracer-community/deepracer-race-data/tree/main/raw_data/tracks">트랙
+                                                    정보 확인</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://github.com/ai-castle/deepracer-lecture-public-data/blob/main/section_08/Input_params_samples.ipynb">입력
+                                                    파라미터 실제 셈플</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://github.com/ai-castle/deepracer-lecture-public-data/tree/main/log_data_samples">다운로드
+                                                    로그 셈플</a></p>
+                                        </li>
+                                        <li>
+                                            <p>로그 분석 예제</p>
+                                            <ul>
+                                                <li>
+                                                    <p><a class="reference external"
+                                                            href="https://colab.research.google.com/github/ai-castle/deepracer-lecture-public-data/blob/main/section_09/Log_Analysis.ipynb">실습
+                                                            예제</a></p>
+                                                </li>
+                                                <li>
+                                                    <p><a class="reference external"
+                                                            href="https://github.com/aws-deepracer-community/deepracer-analysis">More</a>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external" href="https://deepracer.aws">디바이스 콘솔</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://console.aws.amazon.com/deepracer">딥레이서 콘솔</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://docs.aws.amazon.com/deepracer/latest/developerguide/deepracer-build-your-track.html">트랙
+                                                    구축 방법</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://www.amazon.com/gp/browse.html?node=32957528011">트랙 및
+                                                    펜스 구매</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://github.com/ai-castle/deepracer-lecture-public-data/blob/main/section_11/Compress_File_of_S3_Folder_in_CloudShell.md">S3에서
+                                                    모델이 담긴 폴더 압축하기</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://github.com/ai-castle/deepracer-lecture-public-data/blob/main/section_11/Automated_Model_Submission_in_CloudShell.md">클라우드쉘에서
+                                                    딥레이서 모델 제출 자동화 스크립트</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://aws-deepracer-community.github.io/deepracer-for-cloud">DRfC(DeepRacer
+                                                    for Cloud)</a></p>
+                                        </li>
+                                    </ul>
+                                    <hr class="docutils" />
+                                    <ul class="simple">
+                                        <li>
+                                            <p><a class="reference external" href="https://deepracing.io/">AWS DeepRacer
+                                                    Community</a></p>
+                                            <ul>
+                                                <li>
+                                                    <p><a class="reference external"
+                                                            href="http://join.deepracing.io/">slack</a></p>
+                                                </li>
+                                                <li>
+                                                    <p><a class="reference external"
+                                                            href="https://blog.deepracing.io/">blog</a></p>
+                                                </li>
+                                                <li>
+                                                    <p><a class="reference external"
+                                                            href="https://wiki.deepracing.io/">Wiki</a></p>
+                                                    <ul>
+                                                        <li>
+                                                            <p><a class="reference external"
+                                                                    href="https://wiki.deepracing.io/Training_the_AWS_DeepRacer#Sample_rewards">Sample
+                                                                    Reward Function</a></p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a class="reference external"
+                                                                    href="https://wiki.deepracing.io/Customise_Local_Training">Customise
+                                                                    Local Training</a></p>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <hr class="docutils" />
+                                    <ul class="simple">
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://falktan.medium.com/aws-deepracer-how-to-train-a-model-in-15-minutes-a07ab77fb793">How
+                                                    to train a model in 15 minutes</a></p>
+                                        </li>
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://github.com/dgnzlz/Capstone_AWS_DeepRacer">Capston</a>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p><a class="reference external"
+                                                            href="https://github.com/dgnzlz/Capstone_AWS_DeepRacer/tree/master/Compute_Speed_And_Actions">Compute_Speed_And_Actions</a>
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            <p><a class="reference external"
+                                                                    href="https://github.com/dgnzlz/Capstone_AWS_DeepRacer/blob/master/Compute_Speed_And_Actions/Race-Line-Calculation.ipynb">Race-Line-Calculation.ipynb</a>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p><a class="reference external"
+                                                                    href="https://github.com/dgnzlz/Capstone_AWS_DeepRacer/blob/master/Compute_Speed_And_Actions/RaceLine_Speed_ActionSpace.ipynb">RaceLine_Speed_ActionSpace.ipynb</a>
+                                                            </p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p><a class="reference external"
+                                                                            href="https://colab.research.google.com/github/ai-castle/deepracer-lecture-public-data/blob/main/section_11/RaceLine_Speed_ActionSpace.ipynb">재구성
+                                                                            Colab 바로가기</a></p>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <p><a class="reference external"
+                                                            href="https://github.com/dgnzlz/Capstone_AWS_DeepRacer/blob/master/Reward_Function/reward_function.py">Reward_Function</a>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <hr class="docutils" />
+                                    <ul class="simple">
+                                        <li>
+                                            <p><a class="reference external"
+                                                    href="https://github.com/ai-castle/deepracer-lecture-public-data/raw/main/section_11/wifi-creds.txt">wifi-creds.txt</a></p>
+                                        </li>
+                                    </ul>
+                                </section>
+
+                                <script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
@@ -993,45 +1153,47 @@ title="Print to PDF"
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+                                <script>kernelName = 'python3'</script>
 
-              </div>
-              
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="s11-u07-6.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">모델 업로드 및 리소스 정리</p>
+                            </div>
+
+                        </main>
+                        <footer class="footer-article noprint">
+
+                            <!-- Previous / next buttons -->
+                            <div class='prev-next-area'>
+                                <a class='left-prev' id="prev-link" href="s11-u07-6.html" title="previous page">
+                                    <i class="fas fa-angle-left"></i>
+                                    <div class="prev-next-info">
+                                        <p class="prev-next-subtitle">previous</p>
+                                        <p class="prev-next-title">모델 업로드 및 리소스 정리</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <div class="footer-content row">
+                    <footer class="col footer">
+                        <p>
+
+                            By AI Castle (edu@ai-castle.com)<br />
+
+                            &copy; Copyright 2022.<br />
+                        </p>
+                    </footer>
+                </div>
+
+            </div>
+
+
         </div>
-    </a>
-</div>
-            </footer>
-        </div>
     </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By AI Castle (edu@ai-castle.com)<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
-    
-</div>
+
+    <!-- Scripts loaded after <body> so the DOM is not blocked -->
+    <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
 
-      </div>
-    </div>
-  
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+</body>
 
-
-  </body>
 </html>
